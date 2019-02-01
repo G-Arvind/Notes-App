@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Notes!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="notes.css" />
+  
+       
+</head>
+<body onload="verifytoken()">
+    <div class="leftcontainer">
+        <div id="addcontainer" class="addcontainer">
+        </div>
+        <button id="newbtn" class="newbtn" onclick="newnews()"><i class="fas fa-plus"></i></button>
+    <ul id="list"> </ul>
+    </div>
+    <div class="maincontainer">
+        <div class="delbox">
+                <button onclick="deletenote()" id="delbtn"><i class='fas fa-trash-alt'></i></button>
+        </div>
+        <div class="subcontainer">
+        <textarea rows="40" id="area"></textarea>
+
+    </div>
+    
+    </div>
+    
+</body>
+<script src="notes.js"></script>
+</html>

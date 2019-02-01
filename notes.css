@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.leftcontainer{ 
+   position: absolute;
+   width: 30%;
+   height: 100%;
+   background:#3c4554;
+}
+.maincontainer{
+   margin-left: 30%;
+   position: absolute;
+   width: 70%;
+   height: 100%;
+   background: #3d353a;
+}
+.subcontainer{
+    margin-top: 7%;
+    margin-left: 12%;
+    height: 85%;
+    width: 75%;
+    background:#a76067;
+}
+#para{
+    color: white;
+    margin-left: 2%;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .newbtn{
+    color: white;
+    padding: 5px;
+    margin-top: 2%;
+    margin-left: 85%;    
+    height: 50px;
+    width: 10%;
+    background:#3d353a;
+    border: none;
+}
+.addcontainer{
+    display: none;  
+}
+
+li{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid grey;
+    color: white;
+    padding: 15px 20px;
+}
+li:hover{
+    background:#3d353a;
+}
+#area{
+    height: 100%;
+    overflow: scroll;
+    color: white;
+    width: 100%;
+    background:rgba(0,0,0, 0.3);
+    font-size: 30px;
+}
+li  button{
+    margin-top: 2%;
+    border: none;
+    position: absolute;
+    margin-left: 50%;
+    width: 10px;
+    background: transparent;
+    color: red;
+}
+span{
+  display: inline-block;
+  width: 30%;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.delbox{
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    margin-top: 3%;
+    margin-left: 75%;
+    background:#3d353a;
+}
+#delbtn{
+    border: none;
+    background: transparent;
+    margin-left: 75%;
+    color: red;
+}
+
+@media(min-width:320px) and (max-width:768px) {
+
+    .maincontainer{
+        margin-top: 15%;
+        margin-left: 7%;
+        width: 95%;
+        height: 100%;
+    }
+}
+
+@media(min-width:769px) and (max-width:1024px) {
+
+    span{
+        width: 80%;
+    }
+
+    .newbtn{
+        margin-left: 60%;
+        width: 30%;
+        height: 5%;
+    }
+
+    .leftcontainer{
+        width: 30%;
+        height: 100%;
+    }
+    .delbox{  
+        margin-top: 0;
+    }
+
+    .maincontainer{
+        margin-left: 30%;
+        width: 70%;
+        height: 100%;
+    }
+
+}

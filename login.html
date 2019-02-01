@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
+    </head>
+    <body onload="validatetoke()">
+    <div class="maincontainer">
+        <div class="optionflex">
+        <div id="topbar1" class="topbar1" onclick="loginui()">
+            <p>Login</p>
+        </div>
+        <div id="topbar2" class="topbar2" onclick="signupui()">
+            <p>Signup</p>
+        </div>
+        </div>
+        <div class="container">
+            <form onsubmit="event.preventDefault(); login()" method="POST" class="loginform" id="loginform" > 
+                <input type="text" id="uname" placeholder="username">
+                <input type="password" id="pass" placeholder="password">
+                <button type="submit">Login</button>
+            </form>
+            <form method="POST" onsubmit="event.preventDefault(); signup()" class="signupform" id="signupform">
+                    <input type="text" id="semail" placeholder="Email">   
+                    <input type="text" id="suname" placeholder="username"> 
+                    <input type="password" id="spass" placeholder="password">
+                    <button type="submit">Signup</button>
+            </form>
+        </div>
+    </div>
+    </body>
+    <script src="login.js"></script>
+</html>
+
+  
